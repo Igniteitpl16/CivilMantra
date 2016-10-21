@@ -1,0 +1,243 @@
+<link href="css/font-awesome/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+<div class="pages">
+    <div data-page="brickworkm3_report" class="page no-toolbar no-navbar">
+        <div class="page-content">
+            <div class="navbarpages">
+                <div class="navbar_home_link">
+                    <a href="brickworkm3.html" onClick="GetBackPage('brickworkm3.html')">
+                    <i class="fa fa-2x fa-chevron-left" style="color:white"></i>
+                    </a>
+                </div>
+                <div class="navbar_page_center navbar-title">Civil Mantra</div>
+                <div class="menu_open_icon_white">
+                    <a href="index.html" onClick="GetBackPage('index.html')" style="color:white" >
+                        <i class="fa fa-home fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+            <div id="pages_maincontent">
+                <div class="col-100" style="background:white"  id="fromHTMLtestdiv">
+                    <table style="width:100%;border:1px solid black;border-collapse:collapse;color:black">
+                            <tr>
+                                <td colspan="4" style="font-weight:bold;padding:3px;text-align:center;background:#66ff99;border:1px solid black;">BRICKWORK M3
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"  style="font-weight:bold;padding:3px;text-align:center;border:1px solid black;">
+                                &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:bold;padding:3px;text-align:left;border:1px solid black;">
+                                Brick size (cm)
+                                </td>
+                                <td id="m3bricklencm" style="padding:3px;text-align:center;border:1px solid black;">
+                                    {{m3bricklencm}}
+                                </td>
+                                <td id="m3brickwidcm" style="padding:3px;text-align:center;border:1px solid black;">
+                                    {{m3brickwidcm}}
+                                </td>                            
+                                <td id="m3brickhegtcm" style=";padding:3px;text-align:center;border:1px solid black;">
+                                    {{m3brickhegtcm}}
+                                </td>
+                            </tr>
+                         <tr>
+                                <td colspan="4"  style="font-weight:bold;padding:3px;text-align:center;border:1px solid black;">
+                                &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:bold;padding:3px;text-align:left;border:1px solid black;">
+                                Add Mortar thk
+                                </td>
+                                <td id="mortarthk"  colspan="3" style="padding:3px;text-align:left;border:1px solid black;">
+                                    {{mortarthk}}
+                                </td>
+                            </tr>
+                         <tr>
+                                <td colspan="4"  style="font-weight:bold;padding:3px;text-align:center;border:1px solid black;">
+                                &nbsp;
+                                </td>
+                            </tr>
+                           <tr>
+                                <td style="font-weight:bold;padding:3px;text-align:left;border:1px solid black;">
+                                Brick size with Mortar thk (m)
+                                </td>
+                                <td id="m3bricklenmortarm" style="padding:3px;text-align:center;border:1px solid black;">
+                                    {{m3bricklenmortarm}}
+                                </td>
+                                <td id="m3brickwidmortarm" style="padding:3px;text-align:center;border:1px solid black;">
+                                    {{m3brickwidmortarm}}
+                                </td>                            
+                                <td id="m3brickhgtmortarm" style="padding:3px;text-align:center;border:1px solid black;">
+                                    {{m3brickhgtmortarm}}
+                                </td>
+                            </tr>
+                         <tr>
+                                <td colspan="4"  style="font-weight:bold;padding:3px;text-align:center;border:1px solid black;">
+                                &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:bold;padding:3px;text-align:left;border:1px solid black;">
+                                Volume Of Brickwork
+                                </td>
+                                <td id="m3brickworkvol" colspan="3" style="padding:3px;text-align:left;border:1px solid black;">
+                                    {{m3brickworkvol}}
+                                </td>
+                            </tr>
+                         <tr>
+                                <td colspan="4"  style="font-weight:bold;padding:3px;text-align:center;border:1px solid black;">
+                                &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:bold;padding:3px;text-align:left;border:1px solid black;">
+                                No Of Bricks
+                                </td>
+                                <td id="m3noofbricks"  colspan="3" style="padding:3px;text-align:left;border:1px solid black;">
+                                    {{m3noofbricks}}
+                                </td>
+                            </tr>
+                         <tr>
+                                <td colspan="4"  style="font-weight:bold;padding:3px;text-align:center;border:1px solid black;">
+                                &nbsp;
+                                </td>
+                            </tr>
+                             <tr>
+                                <td style="font-weight:bold;padding:3px;text-align:left;border:1px solid black;">
+                                Volume Of Mortar
+                                </td>
+                                <td id="m3mortarvol"  colspan="3" style="padding:3px;text-align:left;border:1px solid black;">
+                                    {{m3mortarvol}}
+                                </td>
+                            </tr>
+                         <tr>
+                                <td colspan="4"  style="font-weight:bold;padding:3px;text-align:center;border:1px solid black;">
+                                &nbsp;
+                                </td>
+                            </tr>
+                             <tr>
+                                <td style="font-weight:bold;padding:3px;text-align:left;border:1px solid black;">
+                                Volume Of Wet Mortar
+                                </td>
+                                <td id="m3wetmortarvol"  colspan="3" style="padding:3px;text-align:left;border:1px solid black;">
+                                    {{m3wetmortarvol}}
+                                </td>
+                            </tr>
+                         <tr>
+                                <td colspan="4"  style="font-weight:bold;padding:3px;text-align:center;border:1px solid black;">
+                                &nbsp;
+                                </td>
+                            </tr>
+                             <tr>
+                                <td style="font-weight:bold;padding:3px;text-align:left;border:1px solid black;">
+                                Volume Of Dry Mortar
+                                </td>
+                                <td id="m3drymortarvol"  colspan="3" style="padding:3px;text-align:left;border:1px solid black;">
+                                    {{m3drymortarvol}}
+                                </td>
+                            </tr>
+                         <tr>
+                                <td colspan="4"  style="font-weight:bold;padding:3px;text-align:center;border:1px solid black;">
+                                &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:bold;padding:3px;text-align:left;border:1px solid black;">
+                                CM Ratio
+                                </td>
+                                <td id="m3cratio" style="padding:3px;text-align:center;border:1px solid black;">
+                                    {{m3cratio}}
+                                </td>
+                                <td id="m3mratio" style="padding:3px;text-align:center;border:1px solid black;">
+                                    {{m3mratio}}
+                                </td>                            
+                                <td style="font-weight:bold;padding:3px;text-align:center;border:1px solid black;">
+                                &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" style="font-weight:bold;padding:3px;text-align:center;border:1px solid black;">
+                                &nbsp;
+                                </td>
+                            </tr>
+                            </table>
+                            <table style="width:100%;border:1px solid black;border-collapse:collapse;color:black">
+                                
+                            <tr>
+                                <td style="font-weight:bold;padding:3px;text-align:left;border:1px solid black;width:40%" colspan="2">
+                                &nbsp;
+                                </td>
+                                <td style="font-weight:bold;padding:3px;text-align:center;border:1px solid black;background:#3399ff;">
+                                Cement
+                                </td>
+                                <td  style="font-weight:bold;padding:3px;text-align:center;border:1px solid black;background:#3399ff;">
+                                Sand
+                                </td>                            
+                               
+                            </tr>
+                            <tr>
+                                <td rowspan="2" colspan="2" style="vertical-align:middle;font-weight:bold;padding:3px;text-align:left;border:1px solid black;width:40%">
+                                Qty Without Wastage
+                                </td>
+                                <td id="m3cementqtywithoutwastagecum" style="padding:3px;text-align:center;border:1px solid black;">
+                                    {{m3cementqtywithoutwastagecum}}
+                                </td>
+                                <td id="m3sandqtywithoutwastagecum" style="padding:3px;text-align:center;border:1px solid black;">
+                                    {{m3sandqtywithoutwastagecum}}
+                                </td>                            
+                                
+                            </tr>
+                            <tr>
+                                <td id="m3cementqtywithoutwastagebags" style="padding:3px;text-align:center;border:1px solid black;">
+                                    {{m3cementqtywithoutwastagebags}}
+                                </td>
+                                <td id="m3sandqtywithoutwastagebrass" style="padding:3px;text-align:center;border:1px solid black;">
+                                    {{m3sandqtywithoutwastagebrass}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="font-weight:bold;padding:3px;text-align:left;border:1px solid black;width:40%">
+                                Wastage %
+                                </td>
+                                <td id="m3cementwastage" style="padding:3px;text-align:center;border:1px solid black;">
+                                    {{m3cementwastage}}
+                                </td>
+                                <td id="m3sandwastage" style="padding:3px;text-align:center;border:1px solid black;">
+                                    {{m3sandwastage}}
+                                </td>                            
+                              
+                            </tr>
+                            <tr>
+                                <td rowspan="2" colspan="2" style="vertical-align:middle;font-weight:bold;padding:3px;text-align:left;border:1px solid black;width:40%">
+                                Qty With Wastage 
+                                </td>
+                                <td id="m3cementqtywithwastagecum" style="padding:3px;text-align:center;border:1px solid black;">
+                                    {{m3cementqtywithwastagecum}}
+                                </td>
+                                <td id="m3sandqtywithwastagecum" style="padding:3px;text-align:center;border:1px solid black;">
+                                    {{m3sandqtywithwastagecum}}
+                                </td>                            
+                               
+                            </tr>
+                            <tr>
+                                <td  id="m3cementqtywithwastagebags" style="padding:3px;text-align:center;border:1px solid black;">
+                                    {{m3cementqtywithwastagebags}}
+                                </td>
+                                <td id="m3sandqtywithwastagebrass" style="padding:3px;text-align:center;border:1px solid black;">
+                                    {{m3sandqtywithwastagebrass}}
+                                </td>                            
+                                
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="content-block">
+                        <p> <a href="javascript:void(0)" onClick="DownloadReport()" class="button active"><i class="fa fa-file-pdf-o" ></i> &nbsp;Print Report</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

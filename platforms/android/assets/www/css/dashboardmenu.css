@@ -1,0 +1,37 @@
+.mainMenuIcon {
+padding-left:5%;
+padding-right:5%;
+margin-top:15px;
+}
+.menuRow,.menuItem {
+	text-align: center;
+	font-weight: bold;
+	color: #007338;
+	padding-left: 2px !important;
+	padding-right: 2px !important;
+	margin-top:10px;
+}
+.menuTitle:hover {
+	text-decoration:none;
+}
+.menuTitle {
+	text-decoration:none;
+	color: #ffffff;
+	font-size:12px;
+	font-weight:bold;
+	font-style: oblique;
+	background: #0972B9;
+	background: -moz-linear-gradient(left, rgba(12,36,220,0) 0%, #0972B9 29%, #0972B9 73%, rgba(12,36,220,0) 99%, rgba(12,36,220,0) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(12,36,220,0)), color-stop(29%, #0972B9), color-stop(73%, #0972B9), color-stop(99%, rgba(12,36,220,0)), color-stop(100%, rgba(12,36,220,0)));
+	background: -webkit-linear-gradient(left, rgba(12,36,220,0) 0%, #0972B9 29%, #0972B9 73%, rgba(12,36,220,0) 99%, rgba(12,36,220,0) 100%);
+	background: -o-linear-gradient(left, rgba(12,36,220,0) 0%, #0972B9 29%, #0972B9 73%, rgba(12,36,220,0) 99%, rgba(12,36,220,0) 100%);
+	background: -ms-linear-gradient(left, rgba(12,36,220,0) 0%, #0972B9 29%, #0972B9 73%, rgba(12,36,220,0) 99%, rgba(12,36,220,0) 100%);
+	background: linear-gradient(to right, rgba(12,36,220,0) 0%, #0972B9 29%, #0972B9 73%, rgba(12,36,220,0) 99%, rgba(12,36,220,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c24dc', endColorstr='#0c24dc', GradientType=1 );
+}
+
+.menuItem img{
+	 -webkit-box-shadow: 5px -3px 5px 0px rgba(0, 0, 0, 0.75) !important;
+    -moz-box-shadow: 5px -3px 5px 0px rgba(0, 0, 0, 0.75) !important;
+    box-shadow: 5px -3px 5px 0px rgba(0, 0, 0, 0.75) !important;
+}

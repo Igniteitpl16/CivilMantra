@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+        <link rel="apple-touch-startup-image" href="images/apple-touch-startup-image-320x460.png" />
+        <title></title>
+        <link rel="stylesheet" href="css/framework7.material.min.css">
+        <link rel="stylesheet" href="css/framework7.ios.min.css">
+        <link rel="stylesheet" href="css/framework7.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/dashboardmenu.css">
+        <link type="text/css" rel="stylesheet" href="css/swipebox.css" />
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,900' rel='stylesheet' type='text/css'>
+        <link href="css/font-awesome/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+        <script src="cordova.js" type="text/javascript"></script>
+       
+    </head>
+    <body id="mobile_wrap">
+        <div class="statusbar-overlay"></div>
+        <div class="panel-overlay"></div>
+        <div class="panel panel-right panel-cover">
+            <div class="user_login_info">
+                <div class="user_thumb">
+                    <img src="images/photos/photo8.jpg" alt="" style="width:100%;height:110px;" id="myProfilePhoto" title="" />
+                </div>
+                <h2  id="profile_name">Hi, Yogesh Joshi</h2>
+                <nav class="list-nav-small">
+                    <ul>
+                        <li class="about-icon-small">
+                            <a onClick="window.location.href='profile.html'" href="#" class="close-panel">Profile</a>
+                        </li>
+                        <li class="lists-icon-small">
+                            <a onClick="window.location.href='referances.html'" href="referances.html">Referances</a>
+                        </li>
+                        <li onclick="GetSocialSharing()" class="blog-icon-small">
+                            <a href="#">Refear a Friend</a></li>
+                        <li onClick="exitFromApplication()" class="logout-icon-small">
+                            <a href="#">Exit</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="views">
+            <div class="view view-main">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="left">
+                          <a href="#" onClick="exitFromApplication()" class="link icon-only"><i style="color:white;" class="fa fa-2x fa-power-off"></i></a>
+                        </div>
+                        <div class="center sliding navbar-title">Civil Mantra</div>
+                        <div class="right">
+                        <a href="#" class="link icon-only open-panel"><i style="color:white;" class="fa fa-2x fa-bars"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pages navbar-through toolbar-through">
+                    <div data-page="index" class="page homepage">
+                        <div class="page-content">
+                            <div class="col-100">
+                                <div class="mainMenuIcon">
+                                    <div class="row menuRow">
+                                        <div class="col-33 menuItem">
+                                            <a href="masonarysubmneu.html">
+                                                <img src='img/icons/masonry.jpg' width='80' height='80'>
+                                                <div class="menuTitle">Masonary
+                                                    <span class="label label-danger"></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-33 menuItem">
+                                            <a href="dpc.html">
+                                                <img  src='img/icons/dpc.jpg' width='80' height='80'>
+                                                <div class="menuTitle">DPC
+                                                    <span class="label label-danger"></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-33 menuItem">
+                                            <a href="rcc.html">
+                                                <img src='img/icons/rcc.jpg' width='80' height='80'>
+                                                <div class="menuTitle">RCC
+                                                    <span class="label label-danger"></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row menuRow">
+                                        <div class="col-33 menuItem">
+                                            <a href="brickworksubmenu.html">
+                                                <img src='img/icons/brickwork.jpg' width='80' height='80'>
+                                                <div class="menuTitle">Brickwork
+                                                    <span class="label label-danger"></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-33 menuItem">
+                                            <a href="plastering.html">
+                                                <img src='img/icons/plastering.jpg' width='80' height='80'>
+                                                <div class="menuTitle">Plastering
+                                                    <span class="label label-danger"></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-33 menuItem">
+                                            <a href="neerufinish.html">
+                                                <img src='img/icons/icon.png' width='80' height='80'>
+                                                <div class="menuTitle">Neeru Finish Coat
+                                                    <span class="label label-danger"></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row menuRow">
+                                        <div class="col-33 menuItem">
+                                            <a href="flooring.html">
+                                                <img src='img/icons/flooring.jpg' width='80' height='80'>
+                                                <div class="menuTitle">Flooring
+                                                    <span class="label label-danger"></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-33 menuItem">
+                                            <a href="PCC.html">
+                                                <img src='img/icons/pcc.jpg' width='80' height='80'>
+                                                <div class="menuTitle">PCC
+                                                    <span class="label label-danger"></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-33 menuItem">
+                                            <a href="pointing.html">
+                                                <img src='img/icons/brickworkpointing.jpg' width='80' height='80'>
+                                                <div class="menuTitle">Brickwork Pointing 
+                                                    <span class="label label-danger"></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row menuRow">
+                                        <div class="col-33 menuItem">
+                                            <a href="painting.html">
+                                                <img src='img/icons/painting.jpg' width='80' height='80'>
+                                                <div class="menuTitle">Painting
+                                                    <span class="label label-danger"></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-33 menuItem">
+                                            <a href="volume.html">
+                                                <img src='img/icons/reinforcement.jpg' width='80' height='80'>
+                                                <div class="menuTitle">Reinforcement
+                                                    <span class="label label-danger"></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-33 menuItem"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Popup -->
+        <div class="popup popup-login">
+            <div class="content-block">
+                <h4>Login</h4>
+                <div class="loginform">
+                    <form id="LoginForm" method="post">
+                        <label>Username:</label>
+                        <input type="text" name="Username" value="" class="form_input required" />
+                        <label>Password:</label>
+                        <input type="password" name="Password" value="" class="form_input required" />
+                        <input type="submit" name="submit" class="form_submit" id="submit" value="Login" />
+                    </form>
+                </div>
+                <div class="close_popup_button_gray"><a href="#" class="close-popup">Close</a></div>
+            </div>
+        </div>
+        <div class="popup popup-check">
+            <div class="close_popup_button_gray_top"><a href="#" class="close-popup"><i class="fa fa-arrow-circle-up"></i></a></div>
+            <div class="content-block">
+                <h4>Calculate </h4>
+                <div class="loginform">
+                    <form id="Form1" method="post">
+                        <label>Username:</label>
+                        <input type="text" name="Username" value="" class="form_input required" />
+                        <label>Password:</label>
+                        <input type="password" name="Password" value="" class="form_input required" />
+                        <input type="submit" name="submit" class="form_submit" id="submit1" value="Login" />
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Services Popup -->
+        <div class="popup popup-social">
+            <div class="content-block">
+                <h4>Social Share</h4>
+                <p>Share icons solution that allows you share and increase your social popularity.</p>
+                <ul class="social_share">
+                    <li><a href="#"><img src="images/icons/white/twitter.png" alt="" title="" /></a></li>
+                    <li><a href="#"><img src="images/icons/white/facebook.png" alt="" title="" /></a></li>
+                    <li><a href="#"><img src="images/icons/white/googleplus.png" alt="" title="" /></a></li>
+                    <li><a href="#"><img src="images/icons/white/dribbble.png" alt="" title="" /></a></li>
+                    <li><a href="#"><img src="images/icons/white/linkedin.png" alt="" title="" /></a></li>
+                    <li><a href="#"><img src="images/icons/white/pinterest.png" alt="" title="" /></a></li>
+                </ul>
+                <div class="close_popup_button"><a href="#" class="close-popup">Close</a></div>
+            </div>
+        </div>
+
+        <div class="popup popup-plastering" id="plastering" style="background-color:white">
+            <div class="navbarpages">
+                <div class="navbar_home_link">
+                    <a href="#" class="close-popup">
+                        <i class="fa fa-2x fa-chevron-left" style="color:white"></i>
+                    </a>
+                </div>
+                <div class="navbar_page_center navbar-title">Civil Mantra</div>
+                <div class="menu_open_icon_white">
+                    <a href="index.html" style="color:white" >
+                        <i class="fa fa-home fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="content-block" style="padding-top:50px">
+
+                <div class="page_content" id="Div5">
+                    
+                    <div class="col-100">
+                        <table style="width:100%;border:1px solid black;border-collapse:collapse;color:black">
+                            <tr>
+                                <td colspan="3" style="font-weight:bold;padding:3px;text-align:center;background:#66ff99;border:1px solid black;">PLASTERING
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"  style="font-weight:bold;padding:3px;text-align:center;border:1px solid black;">
+                                &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td  style="font-weight:bold;padding:3px;text-align:left;border:1px solid black;">
+                                 Thikness
+                                </td>
+                                <td colspan="2" id="plastthikness" style="padding:3px;text-align:center;border:1px solid black;">
+                                &nbsp;
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td style="font-weight:bold;padding:3px;text-align:left;border:1px solid black;">
+                                Area
+                                </td>
+                                <td id="plastarea"  colspan="2" style="padding:3px;text-align:left;border:1px solid black;">
+                                &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:bold;padding:3px;text-align:left;border:1px solid black;">
+                                CM Ratio
+                                </td>
+                                <td id="plastcratio" style="padding:3px;text-align:center;border:1px solid black;">
+                                &nbsp;
+                                </td>
+                                <td id="plastmratio" style="padding:3px;text-align:center;border:1px solid black;">
+                                &nbsp;
+                                </td>                            
+                            </tr>
+                           <tr>
+                                <td style="font-weight:bold;padding:3px;text-align:left;border:1px solid black;">
+                                Area Of Wet Volume
+                                </td>
+                                <td id="plastareaofwetvol" colspan="2"  style="padding:3px;text-align:center;border:1px solid black;">
+                                &nbsp;
+                                </td>
+                               
+                            </tr>
+                            <tr>
+                                <td style="font-weight:bold;padding:3px;text-align:left;border:1px solid black;">
+                                Add 30% for filling joints
+                                </td>
+                                <td id="plastfillingjoints" colspan="2" style="padding:3px;text-align:left;border:1px solid black;">
+                                &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:bold;padding:3px;text-align:left;border:1px solid black;">
+                                Dry Volume (Incr.wet vol<br /> by 30 % )
+                                </td>
+                                <td id="plastdryvolby30percentage"  colspan="2" style="padding:3px;text-align:left;border:1px solid black;">
+                                &nbsp;
+                                </td>
+                            </tr>
+                             <tr>
+                                <td style="font-weight:bold;padding:3px;text-align:left;border:1px solid black;">
+                                Wastage Percentage
+                                </td>
+                                <td id="plastwastepercentage"  colspan="2" style="padding:3px;text-align:left;border:1px solid black;">
+                                &nbsp;
+                                </td>
+                            </tr>
+                             <tr>
+                                <td style="font-weight:bold;padding:3px;text-align:left;border:1px solid black;">
+                                Dry Volume
+                                </td>
+                                <td id="plastdryvol"  colspan="2" style="padding:3px;text-align:left;border:1px solid black;">
+                                &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" style="font-weight:bold;padding:3px;text-align:center;border:1px solid black;border-bottom:none !important">
+                                &nbsp;
+                                </td>
+                            </tr>
+                            </table>
+
+                             <table style="width:100%;border:1px solid black;border-collapse:collapse;color:black">
+                                 
+                            <tr>
+                                <td style="font-weight:bold;padding:3px;text-align:left;border:1px solid black;width:40%" colspan="2">
+                                &nbsp;
+                                </td>
+                                <td style="font-weight:bold;padding:3px;text-align:center;border:1px solid black;background:#3399ff;">
+                                Cement
+                                </td>
+                                <td  style="font-weight:bold;padding:3px;text-align:center;border:1px solid black;background:#3399ff;">
+                                Sand
+                                </td>                            
+                               
+                            </tr>
+                            <tr>
+                                <td rowspan="2" colspan="2" style="vertical-align:middle;font-weight:bold;padding:3px;text-align:left;border:1px solid black;width:40%">
+                                Qty Without Wastage
+                                </td>
+                                <td id="plastcementqtywithoutwastagecum" style="padding:3px;text-align:center;border:1px solid black;">
+                                &nbsp;
+                                </td>
+                                <td id="plastsandqtywithoutwastagecum" style="padding:3px;text-align:center;border:1px solid black;">
+                                &nbsp;
+                                </td>                            
+                                
+                            </tr>
+                            <tr>
+                                <td id="plastcementqtywithoutwastagebags" style="padding:3px;text-align:center;border:1px solid black;">&nbsp;</td>
+                                <td id="plastsandqtywithoutwastagebrass" style="padding:3px;text-align:center;border:1px solid black;">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="font-weight:bold;padding:3px;text-align:left;border:1px solid black;width:40%">
+                                Wastage %
+                                </td>
+                                <td id="plastcementwastage" style="padding:3px;text-align:center;border:1px solid black;">
+                                &nbsp;
+                                </td>
+                                <td id="plastsandwastage" style="padding:3px;text-align:center;border:1px solid black;">
+                                &nbsp;
+                                </td>                            
+                              
+                            </tr>
+                            <tr>
+                                <td rowspan="2" colspan="2" style="vertical-align:middle;font-weight:bold;padding:3px;text-align:left;border:1px solid black;width:40%">
+                                Qty With Wastage 
+                                </td>
+                                <td id="plastcementqtywithwastagecum" style="padding:3px;text-align:center;border:1px solid black;">
+                                &nbsp;
+                                </td>
+                                <td id="plastsandqtywithwastagecum" style="padding:3px;text-align:center;border:1px solid black;">
+                                &nbsp;
+                                </td>                            
+                               
+                            </tr>
+                            <tr>
+                                <td  id="plastcementqtywithwastagebags" style="padding:3px;text-align:center;border:1px solid black;">
+                                &nbsp;
+                                </td>
+                                <td id="plastsandqtywithwastagebrass" style="padding:3px;text-align:center;border:1px solid black;">
+                                &nbsp;
+                                </td>                            
+                                
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="content-block">
+                        <p> <a href="javascript:void(0)" class="button active"><i class="fa fa-file-pdf-o" ></i> &nbsp;Print Report</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="popup popup-painting" id="painting" style="background-color:white">
+            <div class="navbarpages">
+                <div class="navbar_home_link">
+                    <a href="#" class="close-popup">
+                        <i class="fa fa-2x fa-chevron-left" style="color:white"></i>
+                    </a>
+                </div>
+                <div class="navbar_page_center navbar-title">Civil Mantra</div>
+                <div class="menu_open_icon_white">
+                     <a href="index.html" style="color:white" >
+                        <i class="fa fa-home fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="content-block" style="padding-top:50px">
+                <div class="page_content" id="Div8">
+                    <div class="col-100">
+                        <table style="width:100%;border:1px solid black;border-collapse:collapse;color:black">
+                            <tr>
+                                <td colspan="4" style="font-weight:bold;padding:3px;text-align:center;background:#66ff99;border:1px solid black;">PAINTING
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"  style="font-weight:bold;padding:3px;text-align:center;border:1px solid black;">
+                                &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:bold;padding:3px;text-align:left;border:1px solid black;">
+                                Area
+                                </td>
+                                <td id="paintarea"  colspan="3" style="padding:3px;text-align:left;border:1px solid black;">
+                                &nbsp;
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td colspan="4" style="font-weight:bold;padding:3px;text-align:center;border:1px solid black;">
+                                &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:bold;padding:3px;text-align:left;border:1px solid black">
+                                &nbsp;
+                                </td>
+                                <td style="font-weight:bold;padding:3px;text-align:center;border:1px solid black;background:#3399ff;">
+                                
+                                </td>
+                                <td  style="font-weight:bold;padding:3px;text-align:center;border:1px solid black;background:#3399ff;">
+                                Single Coat
+                                </td>                            
+                                <td style="font-weight:bold;padding:3px;text-align:center;border:1px solid black;background:#3399ff;">
+                                Double Coat
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align:middle;font-weight:bold;padding:3px;text-align:left;border:1px solid black">
+                                White Washing Stone Lime
+                                </td>
+                                <td   style="padding:3px;text-align:center;border:1px solid black;">
+                              &nbsp; Paint
+                                </td>
+                                <td id="paintscwhitewash" style="padding:3px;text-align:center;border:1px solid black;">
+                                &nbsp;
+                                </td>                            
+                                <td id="paintdcwhitewash" style="padding:3px;text-align:center;border:1px solid black;">
+                                &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                 <td style="vertical-align:middle;font-weight:bold;padding:3px;text-align:left;border:1px solid black">
+                                Dry Distemper
+                                </td>
+                                <td  style="padding:3px;text-align:center;border:1px solid black;">&nbsp;Paint</td>
+                                <td id="paintscdrydist" style="padding:3px;text-align:center;border:1px solid black;">&nbsp;</td>
+                                <td id="paintdcdrydist" style="padding:3px;text-align:center;border:1px solid black;">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                 <td style="vertical-align:middle;font-weight:bold;padding:3px;text-align:left;border:1px solid black">
+                                Cement Paint<br />(Water Proof)
+                                </td>
+                                <td  style="padding:3px;text-align:center;border:1px solid black;">&nbsp;Paint</td>
+                                <td id="paintscdrycementpaint" style="padding:3px;text-align:center;border:1px solid black;">&nbsp;</td>
+                                <td id="paintdcdrycementpaint" style="padding:3px;text-align:center;border:1px solid black;">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                 <td rowspan="2" style="vertical-align:middle;font-weight:bold;padding:3px;text-align:left;border:1px solid black">
+                                Synthetic Enamle Paint
+                                </td>
+                                <td  style="padding:3px;text-align:center;border:1px solid black;">&nbsp;Primer</td>
+                                <td id="paintscdryprimersyntheticenamle" style="padding:3px;text-align:center;border:1px solid black;">&nbsp;</td>
+                                <td id="paintdcdryprimersyntheticenamle" style="padding:3px;text-align:center;border:1px solid black;">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td  style="padding:3px;text-align:center;border:1px solid black;">&nbsp;Paint</td>
+                                <td id="paintscdrypaintsyntheticenamle" style="padding:3px;text-align:center;border:1px solid black;">&nbsp;</td>
+                                <td id="paintdcdrypaintsyntheticenamle" style="padding:3px;text-align:center;border:1px solid black;">&nbsp;</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="content-block">
+                        <p> <a href="javascript:void(0)" class="button active"><i class="fa fa-file-pdf-o" ></i> &nbsp;Print Report</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     
+         <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/jquery.validate.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/framework7.min.js"></script>
+        <script type="text/javascript" src="js/my-app.js"></script>
+        <script type="text/javascript" src="js/jquery.swipebox.js"></script>
+        <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+        <script type="text/javascript" src="js/email.js"></script>
+        <script type="text/javascript" src="js/SocialSharing.js"></script>
+         
+        
+    </body>
+</html>

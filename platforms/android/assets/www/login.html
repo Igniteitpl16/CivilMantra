@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+        <link rel="apple-touch-startup-image" href="images/apple-touch-startup-image-320x460.png" />
+        <title></title>
+        <link rel="stylesheet" href="css/framework7.css">
+        <link rel="stylesheet" href="style.css">
+        <link type="text/css" rel="stylesheet" href="css/swipebox.css" />
+        <link href="css/font-awesome/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+
+         <script type="text/javascript">
+            document.addEventListener("deviceready", onDeviceReady, false);
+            function onDeviceReady() {
+                window.localStorage.setItem("device_serial_no",device.uuid);
+            }
+        </script>
+    </head>
+    <body id="mobile_wrap" >
+        <div class="views">
+            <div class="view view-main">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="left">
+                            &nbsp;                          
+                        </div>
+                        <div class="center sliding navbar-title">Civil Mantra</div>
+                        <div class="right">
+                            &nbsp;
+                        </div>
+                    </div>
+                </div>
+                <div class="pages navbar-through toolbar-through">
+                    <div data-page="index" class="page homepage">
+                        <div class="page-content">
+                            <div class="content-block">
+                                <!-- Profile Photo Uploadder -->
+
+                                <div class="panel panel-info profile-panel"> 
+                                    <div class="panel-heading"> 
+                                        <h3 class="panel-title"  style="color:#085DAD;font-weight:bold">
+                                            Login
+                                        </h3> 
+                                    </div> 
+                                    <div class="panel-body"> 
+                                        <div class="table-responsive">
+                                            <table class="table table-striped">
+                                                <tr class="success">
+                                                    <td class="title">
+                                                        Mobile No 
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="td_mobile_number" style="text-align:center">
+                                                        <input style="width:90%" type="number" class="form-control" name="mobile_number" id="mobile_number" />  
+                                                    </td>
+                                                </tr>
+                                                <tr class="success">
+                                                    <td class="title">
+                                                        Password  
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="td_password" style="text-align:center">
+                                                        <input style="width:90%" type="password" class="form-control" name="password" id="password" />  
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align:center">
+                                                        <p> <a href="javascript:void(0)" onClick="LoginMe()" class="button active">Login
+                                                        </a></p>
+                                                    </td>
+                                                </tr>
+
+                                                 <tr>
+                                                    <td style="text-align:center">
+                                                        <p> Not Member Yet ? <a href="#" onClick="window.location.href='register.html'"> Sign Up </a>here</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <script src="cordova.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+        <script src="js/jquery.validate.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/framework7.min.js"></script>
+        <script type="text/javascript" src="js/my-app.js"></script>
+        <script type="text/javascript" src="js/jquery.swipebox.js"></script>
+        <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+        <script type="text/javascript" src="js/email.js"></script>
+    </body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+        <link rel="apple-touch-startup-image" href="images/apple-touch-startup-image-320x460.png" />
+        <title></title>
+        <link rel="stylesheet" href="css/framework7.css">
+        <link rel="stylesheet" href="style.css">
+        <link type="text/css" rel="stylesheet" href="css/swipebox.css" />
+        <link href="css/font-awesome/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+    </head>
+    <body id="mobile_wrap" onload="GetProfile()">
+        <div class="statusbar-overlay"></div>
+        <div class="panel-overlay"></div>
+        <div class="panel panel-right panel-cover">
+            <div class="user_login_info">
+                <div class="user_thumb">
+                    <img src="images/photos/photo8.jpg" id="myProfilePhoto" alt="" title="" />
+                </div>
+                <h2  id="profile_name">Hi, username</h2>
+                <p>Edit your account settings</p>
+                <nav class="list-nav-small">
+                     <ul>
+                        <li class="about-icon-small">
+                            <a onClick="window.location.href='profile.html'" href="#" class="close-panel">Profile</a>
+                        </li>
+                        <li class="lists-icon-small">
+                            <a onClick="window.location.href='referances.html'" href="referances.html">Referances</a>
+                        </li>
+                        <li onclick="window.plugins.socialsharing.share('Message, image and link', null, 'images/apple-touch-icon.png', 'http://www.google.com')" class="blog-icon-small">
+                            <a href="#">Refear a Friend</a></li>
+                        <li onClick="exitFromApplication()" class="logout-icon-small">
+                            <a href="#">Exit</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="views">
+            <div class="view view-main">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="left">
+                          <a href="index.html" onClick="window.location.href='index.html'">
+                            <i class="fa fa-2x fa-chevron-left" style="color:white"></i>
+                        </a>
+                          
+                        </div>
+                        <div class="center sliding navbar-title">Civil Mantra</div>
+                        <div class="right">
+                            <a href="#" onClick="window.location.href='index.html'" class="link icon-only"><i style="color:white;" class="fa fa-2x fa-home"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pages navbar-through toolbar-through">
+                    <div data-page="index" class="page homepage">
+                        <div class="page-content">
+                            <div id="pages_maincontent">
+                                <div id="col-100">
+                                    <!-- Profile Photo Uploadder -->
+                                    <div class="panel panel-info profile-panel"> 
+                                        <div class="panel-heading"> 
+                                            <h3 class="panel-title"  style="color:#085DAD;font-weight:bold">Profile Photo</h3> 
+                                        </div> 
+                                        <div class="panel-body"> 
+                                           <div style="width:100%;text-align: center">
+                                                <div class="uploadWrapper">
+                                                <a href="javascript:void(0)" class="uploadIcons" onClick="UploadProfilePhoto()">
+                                                    <i class="fa fa-2x fa-camera fa-icon-white"></i> 
+                                                </a>
+                                                </div>
+                                                <div class="uploadWrapper">
+                                                <a href="javascript:void(0)" class="uploadIcons" onclick="getProfilePhotoFromGallery()">
+                                                    <i class="fa fa-2x fa-picture-o fa-icon-white"></i> 
+                                                </a>
+                                                </div>
+                                            </div>
+
+                                            <input type="hidden"  id="profile_base_64_text" />
+                                            <div class="col-100" style="text-align:center">
+                                                <img src="" id="profile_avatar" style="width:100px;height:auto;margin:auto" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Profile Photo Uploadder -->
+
+                                    <div class="panel panel-info profile-panel"> 
+                                        <div class="panel-heading"> 
+                                            <h3 class="panel-title"  style="color:#085DAD;font-weight:bold">
+                                                My Profile
+                                            </h3> 
+                                        </div> 
+                                        <div class="panel-body"> 
+                                            <div class="table-responsive">
+                                                <table class="table table-striped">
+                                                    <tr class="success">
+                                                        <td class="title">
+                                                            Profile Name  
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="child_profile_name" style="text-align:center">
+                                                            <input style="width:90%" type="text" class="form-control" name="user_profile_name" id="user_profile_name" />  
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="success">
+                                                        <td class="title">
+                                                            Email Id   
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="date_of_birth" style="text-align:center">
+                                                            <input style="width:90%" type="text" class="form-control" name="email_id" id="email_id" />  
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="success">
+                                                        <td class="title">
+                                                            Mobile Number  
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align:center">
+                                                            <input style="width:90%" type="text" class="form-control" name="mobile_number" id="mobile_number" />
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+
+                                <div class="content-block">
+                                    <p> <a href="javascript:void(0)" class="button active" onclick="UpdateMyProfile()">Update Profile</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Popup -->
+        <div class="popup popup-login">
+            <div class="content-block">
+                <h4>Login</h4>
+                <div class="loginform">
+                    <form id="LoginForm" method="post">
+                        <label>Username:</label>
+                        <input type="text" name="Username" value="" class="form_input required" />
+                        <label>Password:</label>
+                        <input type="password" name="Password" value="" class="form_input required" />
+                        <input type="submit" name="submit" class="form_submit" id="submit" value="Login" />
+                    </form>
+                </div>
+                <div class="close_popup_button_gray"><a href="#" class="close-popup">Close</a></div>
+            </div>
+        </div>
+        <!-- Services Popup -->
+        <div class="popup popup-social">
+            <div class="content-block">
+                <h4>Social Share</h4>
+                <p>Share icons solution that allows you share and increase your social popularity.</p>
+                <ul class="social_share">
+                    <li><a href="#"><img src="images/icons/white/twitter.png" alt="" title="" /></a></li>
+                    <li><a href="#"><img src="images/icons/white/facebook.png" alt="" title="" /></a></li>
+                    <li><a href="#"><img src="images/icons/white/googleplus.png" alt="" title="" /></a></li>
+                    <li><a href="#"><img src="images/icons/white/dribbble.png" alt="" title="" /></a></li>
+                    <li><a href="#"><img src="images/icons/white/linkedin.png" alt="" title="" /></a></li>
+                    <li><a href="#"><img src="images/icons/white/pinterest.png" alt="" title="" /></a></li>
+                </ul>
+                <div class="close_popup_button"><a href="#" class="close-popup">Close</a></div>
+            </div>
+        </div>
+        <script src="cordova.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+        <script src="js/jquery.validate.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/framework7.min.js"></script>
+        <script type="text/javascript" src="js/my-app.js"></script>
+        <script type="text/javascript" src="js/jquery.swipebox.js"></script>
+        <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+        <script type="text/javascript" src="js/email.js"></script>
+    </body>
+</html>

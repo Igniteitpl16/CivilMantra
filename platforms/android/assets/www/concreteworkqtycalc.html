@@ -1,0 +1,113 @@
+<div class="pages">
+  <div data-page="projects" class="page no-toolbar no-navbar">
+    <div class="page-content">
+    
+     <div class="navbarpages">
+       <div class="navbar_home_link"><a href="#" data-panel="left" class="open-panel"><img src="images/icons/white/user.png" alt="" title="" /></a></div>
+       <div class="navbar_page_center">About</div>
+       <div class="menu_open_icon_white"><a href="index.html"><img src="images/menu_open.png" alt="" title="" /></a></div>
+     </div>
+     <div id="pages_maincontent">
+
+      <div id="calculate" style="display:block">
+
+      <h3 class="page_subtitle">Concrete Work Quatity Calculation</h3>
+      <h6 >Enter the ratio of cement,sand & aggregate<br>
+      (for expamle 1:2:4) </h6>
+<br>
+            <h2 id="Note"></h2>
+            <div class="contactform">
+            <div class="cmxform" id="ContactForm" >
+            <input type="text" name="txtcement" id="txtcement" value="1" class="form_input required" style="width:10%" />&nbsp;&nbsp; <b>:</b>
+            <input type="text" name="txtsand" id="txtsand" value="1" class="form_input required" style="width:10%" />&nbsp;&nbsp; <b>:</b>
+            <input type="text" name="txtaggregate" id="txtaggregate" value="1" class="form_input required" style="width:10%" />
+            <br>
+            <label>Cement:</label>
+            <input type="text" name="ContactName" id="ContactName" value="" class="form_input required" />
+            <label>Sand:</label>
+            <input type="text" name="ContactEmail" id="ContactEmail" value="" class="form_input required email" />
+            <label>Aggregate:</label>
+            <textarea name="ContactComment" id="ContactComment" class="form_textarea textarea required" rows="" cols=""></textarea>
+            <input type="submit" name="submit" class="form_submit" id="submit" onclick="Calculate();"  value="Send" />
+                <button onclick="Calculate();"   >Calcs</button>
+            <label id="loader" style="display:none;"><img src="images/loader.gif" alt="Loading..." id="LoadingGraphic" /></label>
+            </div>
+            </div>
+            
+     <div class="feat_small_details">
+          
+     <!--<form class="cmxform" id="Form1" method="post" action="">
+         <input type="submit" name="submit" onclick="toggle();" class="form_submit" id="submit" value="Calculate" />
+         </form>
+          </div>-->
+         
+          <br />
+      
+      </div>
+
+         <div id="result" style="display:none">
+
+             <div class="feat_small_details">
+          
+          <a href="#"  class="form_submit" onclick="toggle();">Re Calculate</a>
+          </div>
+             <h3>Simple table</h3>
+              
+                <ul class="responsive_table">
+                     <li class="table_row">
+                        <div class="table_section_small">Nr</div>
+                        <div class="table_section">Service</div>
+                        <div class="table_section">Price</div> 
+                     </li>
+                     <li class="table_row">
+                        <div class="table_section_small">01</div>
+                        <div class="table_section">Web design</div>
+                        <div class="table_section">$100 / hour</div> 
+                     </li>
+                     <li class="table_row">
+                        <div class="table_section_small">02</div>
+                        <div class="table_section">Drawing</div>
+                        <div class="table_section">$60 / hour</div> 
+                     </li>
+                     <li class="table_row">
+                        <div class="table_section_small">03</div>
+                        <div class="table_section">Illustration</div>
+                        <div class="table_section">$80 / hour</div> 
+                     </li>
+                     <li class="table_row">
+                        <div class="table_section_small">04</div>
+                        <div class="table_section">Layout design</div>
+                        <div class="table_section">$80 / hour</div> 
+                     </li>
+                     <li class="table_row">
+                        <div class="table_section_small">05</div>
+                        <div class="table_section">Programming</div>
+                        <div class="table_section">$120 / hour</div> 
+                     </li>
+                </ul>
+              
+			    <p>With this table design you can create a list of web design services.</p>
+         </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    function Calculate() {
+        alert("he");
+        window.location.href("about.html");
+    }
+
+</script>
+
+<script>
+    var toggle = function () {
+        var mydiv = document.getElementById('result');
+        if (mydiv.style.display === 'block' || mydiv.style.display === '')
+            mydiv.style.display = 'none';
+        else
+            mydiv.style.display = 'block'
+    }
+</script>

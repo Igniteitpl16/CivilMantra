@@ -1,0 +1,125 @@
+﻿<link href="css/font-awesome/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+<div class="pages">
+    <div data-page="projects" class="page no-toolbar no-navbar">
+        <div class="page-content">
+            <div class="navbarpages">
+                <div class="navbar_home_link">
+                    <a href="index.html">
+                        <i class="fa fa-2x fa-chevron-left" style="color:white"></i>
+                    </a>
+                </div>
+                <div class="navbar_page_center navbar-title">Civil Mantra</div>
+                <div class="menu_open_icon_white">
+                    <a href="index.html" style="color:white" >
+                        <i class="fa fa-home fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+            <div id="pages_maincontent">
+                <div class="col-100" style="text-align:center">
+                    <h3 class="page_subtitle" style="text-align:center">POINTING OF BRICKWORK</h3>
+                </div>
+                <br>
+                <div id="calculate">
+                    <h2 id="Note"></h2>
+                    <form class="contactform">
+                        
+                        <div class="row">
+                            <div class="col-100">
+                                <label>Area : </label>
+                            </div>
+                        </div>
+                       <div class="row">
+                            <div class="col-80" style="width:calc(100% - 40px) !important;">
+                                <input type="number"  id="txtarea"  class="form_input required" />
+                            </div>
+                            <div class="col-20" style="width:40px">
+                                <b style="font-size: large; font-weight: bold">sq m</b>
+                            </div>
+                        </div>
+                          <div class="row">
+                            <div class="col-100">
+                                <label>CM Ratio : </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-40" style="width:45%">
+                                <input type="number" name="txtcement" id="txtc" value="" class="form_input required" />
+                            </div>
+                            <div class="col-20" style="text-align:center;width:10%;font-weight:bold">
+                                <b>:</b>
+                            </div>
+                            <div class="col-40" style="width:45%">
+                                <input type="number" name="txtsand" id="txtm" value="" class="form_input required"  />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-100">
+                                <label>Wastage Percentage : </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-40" style="width:45%">
+                                <input type="number"  id="txtcement" class="form_input required" placeholder="Cement" />
+                            </div>
+                            <div class="col-20" style="text-align:center;width:10%;font-weight:bold">
+                                <b>:</b>
+                            </div>
+                            <div class="col-40"  style="width:45%">
+                                <input type="number" name="txtsands" id="txtsand" class="form_input required"  placeholder="Sand" />
+                            </div>
+                            
+                        </div>
+                    </form>
+                    <div class="content-block">
+                        <p> <a href="javascript:void(0)" class="button active" onclick="Pointing()">Calculate</a></p>
+                    </div>
+                    <!--div class="content-block">
+                        <div class="feat_small_details" style="text-align: center; padding-top: 20px">
+                            <!-- <a href="#" class="button_small" onclick="{ CalculateRandomRubbleMasonry(); }">Calculate</a>-->
+                    <!--a href="#" onmouseover="GetOver()" onmouseout="GetMouseOut()" id="myCalculator" class="anchorhover" title="calc" onclick="ShowPopupMasonary()"><i class="fa fa-calculator fa-2x" ></i></a>
+                        </div>
+                        </div -->
+                     <table style="width: 100%; border: 1px solid black; border-collapse: collapse; color: black;table-layout:fixed">
+                    <tr style="width: 100%">
+                            <td  colspan="2"  style="font-weight:bold;padding:3px;text-align: center;background:#66ff99;border:1px solid black;margin-bottom:15px">Calculation Referance
+                            </td>
+                        </tr>
+                         <tr style="width: 100%">
+                            <td   style="width: 25%;font-weight:bold; text-align:center; padding: 3px;  border: 1px solid black;">Entity To Calculate
+                            </td>
+
+                            <td  style="width: 75%;  font-weight:bold;text-align:center;padding: 3px;  border: 1px solid black;">Formula</td>
+                        </tr>
+                     <tr style="width: 100%">
+                            <td   style="width: 25%;  padding: 3px;  border: 1px solid black;">Volume of Dry Mortar  </td>
+
+                            <td  style="width: 75%;  padding: 3px;  border: 1px solid black;">Area * 0.0036 cu m</td>
+                        </tr>
+                         <tr style="width: 100%">
+                            <td   style="width: 100%;  padding: 3px;  border: 1px solid black;">Cement (cu m)</td>
+
+                            <td  style="width: 75%;  padding: 3px;  border: 1px solid black;">  ( vol.of dry mortar / ( C + M ) ) * C cu m </td>
+                        </tr>
+                         <tr style="width: 100%">
+                            <td   style="width: 100%;  padding: 3px;  border: 1px solid black;">Sand (cu m) </td>
+                             <td  style="width: 75%;  padding: 3px;  border: 1px solid black;">( vol.of dry mortar / ( C + M ) ) * M cu m </td>
+                            
+                        </tr>
+                        <tr style="width: 100%">
+                            <td   style="width: 100%;  padding: 3px;  border: 1px solid black;">Cement (bags) </td>
+                            <td  style="width: 75%;  padding: 3px;  border: 1px solid black;">Cement (cu m) * (1000 / 35) bags</td>
+                            
+                        </tr>
+                        <tr style="width: 100%">
+                            <td   style="width: 100%;  padding: 3px;  border: 1px solid black;">Sand (brass) </td>
+                            <td  style="width: 75%;  padding: 3px;  border: 1px solid black;">Sand (cu m) / 2.83 brass</td>
+                            
+                        </tr>
+                      
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

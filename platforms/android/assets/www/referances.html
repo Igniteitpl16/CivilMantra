@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+        <link rel="apple-touch-startup-image" href="images/apple-touch-startup-image-320x460.png" />
+        <title></title>
+        <link rel="stylesheet" href="css/framework7.css">
+        <link rel="stylesheet" href="style.css">
+        <link type="text/css" rel="stylesheet" href="css/swipebox.css" />
+        <link href="css/font-awesome/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+    </head>
+    <body id="mobile_wrap" onload="GetProfilePhoto()">
+        <div class="statusbar-overlay"></div>
+        <div class="panel-overlay"></div>
+        <div class="panel panel-right panel-cover">
+            <div class="user_login_info">
+                <div class="user_thumb">
+                    <img src="images/photos/photo8.jpg" id="myProfilePhoto" alt="" title="" />
+                </div>
+                <h2 id="profile_name">Hi, username</h2>
+                <p>Edit your account settings</p>
+                <nav class="list-nav-small">
+                     <ul>
+                        <li class="about-icon-small">
+                            <a onClick="window.location.href='profile.html'" href="#" class="close-panel">Profile</a>
+                        </li>
+                        <li class="lists-icon-small">
+                            <a onClick="window.location.href='referances.html'" href="referances.html">Referances</a>
+                        </li>
+                        <li onclick="window.plugins.socialsharing.share('Message, image and link', null, 'images/apple-touch-icon.png', 'http://www.google.com')" class="blog-icon-small">
+                            <a href="#">Refear a Friend</a></li>
+                        <li onClick="exitFromApplication()" class="logout-icon-small">
+                            <a href="#">Exit</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="views">
+            <div class="view view-main">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="left">
+                          <a href="index.html" onClick="window.location.href='index.html'">
+                            <i class="fa fa-2x fa-chevron-left" style="color:white"></i>
+                        </a>
+                          
+                        </div>
+                        <div class="center sliding navbar-title">Civil Mantra</div>
+                        <div class="right">
+                            <a href="#" onClick="window.location.href='index.html'" class="link icon-only"><i style="color:white;" class="fa fa-2x fa-home"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pages navbar-through toolbar-through">
+                    <div data-page="index" class="page homepage">
+                        <div class="page-content">
+                            <div id="pages_maincontent">
+                                <div class="col-100" style="text-align:center">
+                                    <h3 class="page_subtitle">REFERANCES</h3>
+                                </div>
+                                <div id="calculate">
+                                    <h2 id="Note"></h2>
+                                    <table class="responsive_table">
+                                        <tr class="table_row">
+                                            <td colspan="3" class="table_section"></td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section" colspan="3">
+                                                <span style="font-weight:bold">Estimating labour :- </span><br /> 
+                                                <p style="text-align:justify">During preparation of labour estimates due allowance must be  
+                                                    made for variations in wages, working conditions and for the different classes of labour required for different kinds of works. 
+                                                    The length of time required to do a certain piece of work may vary according to the skill and mental development of the workman and also according to the working conditions to the particular job, when work is plentiful, labour scarce, and jobs are easy to get the time required for a labourer to do a certain piece of work is generally more than the average and vice-versa. However, the experience of ac ontractor, after a few months when he has had a number of workmen under him, should enable him to estmate quite accurately the length of time that any of the workmen will need to do a certain job. Local customs or un¬ion regulations often require to specify number and classes of labour for a certain work. The recommends. Lions of All India Standard Schedule of Rates for different kinds of labourers as required to do a certain piece of work have precisely been adopted to prepare the analysis of rates.
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section" colspan="3">
+                                                <span style="font-weight:bold">Task or out-turn work : - </span><br />
+                                                <p style="text-align:justify;">This is the quantity of work which can be done by an artisan or skilled labour of the trade working for 8 hours a day. Although out-turn work is variable yet in order to specify the same an average approximate quantity has been worked out following the Standard Analysis of Rates as far as possible. The out-turn work does not mean that the quantity of work can be completed only by the labourer as designated below. But other types of labourers or helpers are also to be engaged to complete the quantity of work. For an example a Mason can complete 1.50 cu m of brickwork per day.(8 hours a day) provided he is helped by 2 Mazdoors to carry and place all other materials at his disposal etc. Instruction from a Head Mason for a few hours is also necessary to complete the quantity of brickwork.</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section" style="font-weight:bold">Sr No</td>
+                                            <td class="table_section"  style="font-weight:bold">Description Of Work</td>
+                                            <td class="table_section"  style="font-weight:bold">Qty Of Work Per Day</td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">1</td>
+                                            <td class="table_section">Earthwork in excavation in foundation trenches in ordinary soil, lead up to 50 m and lift up to 1.5 m</td>
+                                            <td class="table_section">2.27 cu m per Mazdoor</td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">2</td>
+                                            <td class="table_section">Earthwork in excavation in foundation trenches in hard soil,lead up to 50 m and lift up to 1.5 m</td>
+                                            <td class="table_section">2.10 cu m per Mazdoor</td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">3</td>
+                                            <td class="table_section">Excavation in soft or decomposed rock by blasting, lead up to 50 m and lift up to 1.5 m.</td>
+                                            <td class="table_section">0.55 cu m per Mazdoor</td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">4</td>
+                                            <td class="table_section">Sand filling in plinth, consolidating and dressing</td>
+                                            <td class="table_section">4.00 cu m per Mazdoor
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">5</td>
+                                            <td class="table_section">Single layer brick flat soling including ramming and dressing the bed etc.
+                                            </td>
+                                            <td class="table_section">9.00 sq m per Mazdoor</td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">6</td>
+                                            <td class="table_section">Lime concrete in foundation
+                                            </td>
+                                            <td class="table_section">10.00 cu m per Mason
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">7
+                                            </td>
+                                            <td class="table_section">Cement concrete
+                                            </td>
+                                            <td class="table_section">5.00 cu m per Mason
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">7
+                                            </td>
+                                            <td class="table_section">Cement concrete
+                                            </td>
+                                            <td class="table_section">5.00 cu m per Mason
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">8
+                                            </td>
+                                            <td class="table_section">Cement concrete ( 1 : 2 : 4 ) for R. C. C. work
+                                            </td>
+                                            <td class="table_section">3.25 cu m per Mason
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">9
+                                            </td>
+                                            <td class="table_section">Brickwork in foundation and plinth
+                                            </td>
+                                            <td class="table_section">1.25 cu m per Mason
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">10
+                                            </td>
+                                            <td class="table_section">Brickwork in superstructure ground floor
+                                            </td>
+                                            <td class="table_section">7.00 sq m per Mason
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">11
+                                            </td>
+                                            <td class="table_section">Half brickwork in partition wall
+                                            </td>
+                                            <td class="table_section">1.00 cu m per Mason
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">12
+                                            </td>
+                                            <td class="table_section">Brickwork in plain arches
+                                            </td>
+                                            <td class="table_section">1.00 cu m per Mason
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">13
+                                            </td>
+                                            <td class="table_section">Reinforced Brickwork in slabs
+                                            </td>
+                                            <td class="table_section">1.10 cu m per Mason
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">14
+                                            </td>
+                                            <td class="table_section">2.5 cm thick cement concrete D. P. C
+                                            </td>
+                                            <td class="table_section">12.50 sq m per Mason
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">15
+                                            </td>
+                                            <td class="table_section">20 mm thick D. P. C. with cement mortar
+                                            </td>
+                                            <td class="table_section">20.00 sq m per Mason
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">16
+                                            </td>
+                                            <td class="table_section">Random rubble Masonry in foundation and plinth
+                                            </td>
+                                            <td class="table_section">1.00 cu m per Mason
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">17
+                                            </td>
+                                            <td class="table_section">Random rubble Masonry in superstructure
+                                            </td>
+                                            <td class="table_section">0.90 cu m per Mason
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">18
+                                            </td>
+                                            <td class="table_section">Ashlar Masonry in superstructure
+                                            </td>
+                                            <td class="table_section">0.40 cu m per Mason
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">19
+                                            </td>
+                                            <td class="table_section">Coursed rubble stone Masonry in superstructure
+                                            </td>
+                                            <td class="table_section">0.67 cu m per Mason
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">20
+                                            </td>
+                                            <td class="table_section">Brick-on-edge floor with cement mortar
+                                            </td>
+                                            <td class="table_section">1.00 sq m per Mason
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">21
+                                            </td>
+                                            <td class="table_section">7.5 cm thick cement concrete floor ( 1: 4 : 8)
+                                            </td>
+                                            <td class="table_section">10.00 sq m per Mason
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">22
+                                            </td>
+                                            <td class="table_section">Terraced flooring 7.5 cm thick
+                                            </td>
+                                            <td class="table_section">20.00 sq m per Mason
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">23
+                                            </td>
+                                            <td class="table_section">2.5 cm thick cement concrete flooring
+                                            </td>
+                                            <td class="table_section">12.50 sq m per Mason
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">24
+                                            </td>
+                                            <td class="table_section">Neat cement punning (about 1.5 mm thick)
+                                            </td>
+                                            <td class="table_section">40.00 sq m per Mason
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">25
+                                            </td>
+                                            <td class="table_section">Terrazzo floor 6 mm thick mosaic work over 2 cm thick cement concrete ( 1 : 2 : 4 )
+                                            </td>
+                                            <td class="table_section">5.00 sq m per Mason
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">26
+                                            </td>
+                                            <td class="table_section">Terrazzo skirting or dado 6 mm thick Terrazzo layer over 12mm thick cement plaster
+                                            </td>
+                                            <td class="table_section">3.85 sq m per Mason
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">27
+                                            </td>
+                                            <td class="table_section">Precast Terrazzo tiles 20 mm thick laying on a bed of 25 mm thick lime mortar
+                                            </td>
+                                            <td class="table_section">5.00 sq m per Mason
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">28
+                                            </td>
+                                            <td class="table_section">Precast Terrazzo tiles 20 mm thick in skirting and rises of steps on 12 mm cement plaster
+                                            </td>
+                                            <td class="table_section">3.20 sq m per Mason
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">29
+                                            </td>
+                                            <td class="table_section">10 cm average thick lime terracing on R. C. roof
+                                            </td>
+                                            <td class="table_section">9.10 sq m per Mason
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">30
+                                            </td>
+                                            <td class="table_section">Flat terrace roofing average 10 cm thick over two layers of tiles (with 2.5 cm mortar)
+                                            </td>
+                                            <td class="table_section">5.00 sq m per Mason
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">31
+                                            </td>
+                                            <td class="table_section">Ranigunj Tile roofing
+                                            </td>
+                                            <td class="table_section">6.70 sq m per Mason
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">32
+                                            </td>
+                                            <td class="table_section">Mangalore Tile roofing including wooden battens; Tiles set in cement mortar
+                                            </td>
+                                            <td class="table_section">10.00 sq m per Mason
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">33
+                                            </td>
+                                            <td class="table_section">Corrugated Galvanised Iron sheet roofing
+                                            </td>
+                                            <td class="table_section">10.00 sq m per Carpenter
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">34
+                                            </td>
+                                            <td class="table_section">12 mm thick cement plaster on new brickwork
+                                            </td>
+                                            <td class="table_section">10.00 sq m per Mason
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">35
+                                            </td>
+                                            <td class="table_section">6 mm thick cement plaster to R. C. ceiling
+                                            </td>
+                                            <td class="table_section">10.00 sq m per Mason
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">36
+                                            </td>
+                                            <td class="table_section">Rule pointing on brickwork
+                                            </td>
+                                            <td class="table_section">10.00 sq m per Mason
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">37
+                                            </td>
+                                            <td class="table_section">Single coat white-washing over old white-washed surface
+                                            </td>
+                                            <td class="table_section">133 sq m per Painter
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">38
+                                            </td>
+                                            <td class="table_section">White-washing two coats on a coat of primer
+                                            </td>
+                                            <td class="table_section">66.70 sq m per Painter
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">39
+                                            </td>
+                                            <td class="table_section">Distempering two coats to new cement plaster with a coat of primer
+                                            </td>
+                                            <td class="table_section">17.00 sq m per Painter
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">40
+                                            </td>
+                                            <td class="table_section">Lime punning over interior plaster
+                                            </td>
+                                            <td class="table_section">10.00 sq m per Mason
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">41
+                                            </td>
+                                            <td class="table_section">Water-proofing cement paint (snow cem) to new cement plaster
+                                            </td>
+                                            <td class="table_section">20.00 sq m per Painter
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">42
+                                            </td>
+                                            <td class="table_section">Wall painting with plastic emulsion paint for even shade
+                                            </td>
+                                            <td class="table_section">28.00 sq m per Painter
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">43
+                                            </td>
+                                            <td class="table_section">Primer coat with ready mixed primer on wood or steel-work
+                                            </td>
+                                            <td class="table_section">40.00 sq m per Painter
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">44
+                                            </td>
+                                            <td class="table_section">Painting two coats (excluding primer coat) with ready mixed paint for wood-work
+                                            </td>
+                                            <td class="table_section">18.00 sq m per Painter
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">45
+                                            </td>
+                                            <td class="table_section">Painting two coats (excluding primer coat) ready mixed paint on old wood-work
+                                            </td>
+                                            <td class="table_section">28.00 sq m per Painter
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">46
+                                            </td>
+                                            <td class="table_section">Breaking of overburpt brick to ballast 40 mm down
+                                            </td>
+                                            <td class="table_section">0.75 cu m per Mazdoor
+                                            </td>
+                                        </tr>
+                                        <tr class="table_row">
+                                            <td class="table_section">47
+                                            </td>
+                                            <td class="table_section">Breaking of overburnt brick to ballast 25 mm down
+                                            </td>
+                                            <td class="table_section">0.55 cu m per Mazdoor
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Popup -->
+        <div class="popup popup-login">
+            <div class="content-block">
+                <h4>Login</h4>
+                <div class="loginform">
+                    <form id="LoginForm" method="post">
+                        <label>Username:</label>
+                        <input type="text" name="Username" value="" class="form_input required" />
+                        <label>Password:</label>
+                        <input type="password" name="Password" value="" class="form_input required" />
+                        <input type="submit" name="submit" class="form_submit" id="submit" value="Login" />
+                    </form>
+                </div>
+                <div class="close_popup_button_gray"><a href="#" class="close-popup">Close</a></div>
+            </div>
+        </div>
+        <!-- Services Popup -->
+        <div class="popup popup-social">
+            <div class="content-block">
+                <h4>Social Share</h4>
+                <p>Share icons solution that allows you share and increase your social popularity.</p>
+                <ul class="social_share">
+                    <li><a href="#"><img src="images/icons/white/twitter.png" alt="" title="" /></a></li>
+                    <li><a href="#"><img src="images/icons/white/facebook.png" alt="" title="" /></a></li>
+                    <li><a href="#"><img src="images/icons/white/googleplus.png" alt="" title="" /></a></li>
+                    <li><a href="#"><img src="images/icons/white/dribbble.png" alt="" title="" /></a></li>
+                    <li><a href="#"><img src="images/icons/white/linkedin.png" alt="" title="" /></a></li>
+                    <li><a href="#"><img src="images/icons/white/pinterest.png" alt="" title="" /></a></li>
+                </ul>
+                <div class="close_popup_button"><a href="#" class="close-popup">Close</a></div>
+            </div>
+        </div>
+        <script src="cordova.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+        <script src="js/jquery.validate.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/framework7.min.js"></script>
+        <script type="text/javascript" src="js/my-app.js"></script>
+        <script type="text/javascript" src="js/jquery.swipebox.js"></script>
+        <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+        <script type="text/javascript" src="js/email.js"></script>
+    </body>
+</html>

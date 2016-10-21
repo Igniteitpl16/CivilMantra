@@ -1,0 +1,36 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "at.modalog.cordova.plugin.html2pdf": {
+            "PACKAGE_NAME": "com.civilmantra.igniteitpl"
+        },
+        "com.html2pdf.generator": {
+            "PACKAGE_NAME": "com.civilmantra.igniteitpl"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.civilmantra.igniteitpl"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.civilmantra.igniteitpl"
+        },
+        "cordova-plugin-uniquedeviceid": {
+            "PACKAGE_NAME": "com.civilmantra.igniteitpl"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.civilmantra.igniteitpl"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.civilmantra.igniteitpl"
+        }
+    },
+    "dependent_plugins": {}
+}

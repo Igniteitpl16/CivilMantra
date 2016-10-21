@@ -1,0 +1,119 @@
+﻿<link href="css/font-awesome/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+<div class="pages">
+    <div data-page="projects" class="page no-toolbar no-navbar">
+        <div class="page-content">
+            <div class="navbarpages">
+                <div class="navbar_home_link">
+                  
+                     <a href="index.html">
+                        <i class="fa fa-2x fa-chevron-left" style="color:white"></i>
+                    </a>
+                </div>
+                <div class="navbar_page_center navbar-title">Civil Mantra</div>
+                <div class="menu_open_icon_white">
+                     <a href="index.html" style="color:white" >
+                        <i class="fa fa-home fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+            <div id="pages_maincontent">
+                <div class="col-100" style="text-align:center">
+                    <h3 class="page_subtitle" style="text-align:center">PAINTING</h3>
+                </div>
+                <br>
+                <div id="calculate">
+                    <h2 id="Note"></h2>
+                    <form class="contactform">
+                        <div class="row">
+                            <div class="col-100">
+                                <label>Area : </label>
+                            </div>
+                        </div>
+                       <div class="row">
+                            <div class="col-80" style="width:calc(100% - 40px) !important;">
+                                <input type="number"  id="txtarea"  class="form_input required" />
+                            </div>
+                            <div class="col-20" style="width:40px">
+                                <b style="font-size: large; font-weight: bold">sq m</b>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="content-block">
+                        <p> <a href="javascript:void(0)" class="button active" onclick="Painting()">Calculate</a></p>
+                    </div>
+                    <table style="width:100%;border:1px solid black;border-collapse:collapse;color:black;margin-bottom:15px">
+                        <tr>
+                            <td colspan="4" style="font-weight:bold;padding:3px;text-align:center;background:#66ff99;border:1px solid black;">Calculation Referance
+                            </td>
+                        <tr>
+                            <td style="font-weight:bold;padding:3px;text-align:left;border:1px solid black">
+                            &nbsp;
+                            </td>
+                            <td style="font-weight:bold;padding:3px;text-align:center;border:1px solid black; ">
+                            
+                            </td>
+                            <td  style="font-weight:bold;padding:3px;text-align:center;border:1px solid black; ">
+                            Single Coat
+                            </td>                            
+                            <td style="font-weight:bold;padding:3px;text-align:center;border:1px solid black; ">
+                            Double Coat
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align:middle;font-weight:bold;padding:3px;text-align:left;border:1px solid black">
+                            White Washing Stone Lime
+                            </td>
+                            <td   style="padding:3px;text-align:center;border:1px solid black;">
+                          &nbsp; Paint
+                            </td>
+                            <td id="Td1" style="padding:3px;text-align:center;border:1px solid black;vertical-align:middle">
+                                 Area * 0.1 kg
+                            </td>                            
+                            <td id="paintdcwhitewash" style="padding:3px;text-align:center;border:1px solid black;vertical-align:middle">
+                                  Area * 0.3 kg
+                            </td>
+                        </tr>
+                        <tr>
+                             <td style="vertical-align:middle;font-weight:bold;padding:3px;text-align:left;border:1px solid black">
+                            Dry Distemper
+                            </td>
+                            <td  style="padding:3px;text-align:center;border:1px solid black;">&nbsp;Paint</td>
+                            <td id="paintscdrydist" style="padding:3px;text-align:center;border:1px solid black;vertical-align:middle">
+                                 Area * 0.12 kg
+                            </td>
+                            <td id="paintdcdrydist" style="padding:3px;text-align:center;border:1px solid black;vertical-align:middle">
+                                  Area * 0.195 kg
+                            </td>
+                        </tr>
+                        <tr>
+                             <td style="vertical-align:middle;font-weight:bold;padding:3px;text-align:left;border:1px solid black">
+                            Cement Paint<br />(Water Proof)
+                            </td>
+                            <td  style="padding:3px;text-align:center;border:1px solid black;">&nbsp;Paint</td>
+                            <td colspan="2" id="paintscdrycementpaint" style="padding:3px;text-align:center;border:1px solid black;vertical-align:middle">
+                                  Area * 0.2 lit
+                            </td>
+                          
+                        </tr>
+                        <tr>
+                             <td rowspan="2" style="vertical-align:middle;font-weight:bold;padding:3px;text-align:left;border:1px solid black">
+                            Synthetic Enamle Paint
+                            </td>
+                            <td  style="padding:3px;text-align:center;border:1px solid black;">&nbsp;Primer</td>
+                            <td colspan="2" id="paintscdryprimersyntheticenamle" style="padding:3px;text-align:center;border:1px solid black;">
+                                  Area * 0.08 lit
+                            </td>
+                           
+                        </tr>
+                        <tr>
+                            <td  style="padding:3px;text-align:center;border:1px solid black;">&nbsp;Paint</td>
+                            <td colspan="2" id="paintscdrypaintsyntheticenamle" style="padding:3px;text-align:center;border:1px solid black;">
+                                 Area * 0.11 lit
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
